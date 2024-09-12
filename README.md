@@ -7,7 +7,8 @@ Hangman is a classic word-guessing game where the player tries to figure out a h
 
 
 
-![Game Screenshot](![Uploading HANGMAN.jpeg…]
+![Game Screenshot](![![HANGMAN](https://github.com/user-attachments/assets/5dea8033-b361-41d8-82ec-55b745ab39a9)
+]
 )
 
 How the Game Works:
