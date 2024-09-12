@@ -1,0 +1,52 @@
+import random
+
+# List of words
+word_list = ["apple", "bat", "cat"]
+
+# Randomly choose a word from the list
+chosen_word = random.choice(word_list)
+
+# Determine the length of the chosen word
+word_length = len(chosen_word)
+
+# Initialize game variables
+end_of_game = False
+lives = 6
+
+# Create a display list with blanks for each letter in the chosen word
+display=[]
+for _ in range(word_length):
+    display += "_"
+
+# Game loop
+while not end_of_game:
+    guess = input("Guess your word: ").lower()
+
+    # Check if the guessed letter has already been guessed
+    if guess in display:
+        print(f"You have already guessed {guess}.")
+    
+    # Check guessed letter
+    for position in range(word_length):
+        letter = chosen_word[position]
+        if letter == guess:
+            display[position] = letter
+
+    # If the guess is not in the word, lose a life
+    if guess not in chosen_word:
+        lives -= 1
+        print(f"Sorry, you have lost a life. Lives remaining: {lives}")
+        if lives == 0:
+            end_of_game = True
+            print("You lose.")
+    
+    # Check if the player has won
+    if "_" not in display:
+        end_of_game = True
+        print("You win!")
+
+    # Print the current state of the word
+    print(f"{''.join(display)}")
+
+# Display the final result
+print(f"The word was: {chosen_word}")
