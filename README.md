@@ -1,7 +1,7 @@
 # Hangman-Project
 Hangman Game
 
-python allows for quick and easy creation of simple games due to its clean syntax and a variety of libraries designed for game development, Right i have written a Hangman game code using pyhton language.
+Python allows for quick and easy creation of simple games due to its clean syntax and a variety of libraries designed for game development, Right i have written a Hangman game code using pyhton language.
 Hangman is a classic word-guessing game where the player tries to figure out a hidden word by guessing letters within a limited number of attempts.The hangman game is a multiplayer game. In this game, one player selects a word. Other players have a certain number of guesses to guess the characters in the word. If the players are able to guess the characters in the entire word within certain attempts, they win. Otherwise, they lose.
 
 
@@ -10,6 +10,8 @@ Hangman is a classic word-guessing game where the player tries to figure out a h
 ![Game Screenshot](![![HANGMAN](https://github.com/user-attachments/assets/5dea8033-b361-41d8-82ec-55b745ab39a9)
 ]
 )
+
+
 
 How the Game Works:
 1. The computer randomly selects a word from a predefined list.
